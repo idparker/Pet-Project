@@ -1,0 +1,254 @@
+html,
+body {
+  min-width: 1440px;
+
+  margin: 0 auto;
+  padding: 0 auto;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  align-items: flex-start;
+}
+
+.header-logo {
+  width: 202px;
+  height: 59px;
+  flex-shrink: 0;
+
+  margin-top: 53px;
+  margin-left: 110px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+
+  background: transparent; /* Убираем фон у навигации */
+  z-index: 1000; /* Чтобы меню было поверх hero */
+  width: 720px;
+}
+
+.nav-list-item {
+  font-family: Oswald;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  margin-top: 71px;
+}
+
+.nav-list-item-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-list-item-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.selected-link {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/* Hero */
+
+.hero-section {
+}
+.hero-list {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-list-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: 80px;
+}
+.hero-title {
+  color: #000;
+  font-family: Oswald;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 100% */
+
+  min-width: 414px;
+  height: 120px;
+}
+.hero-text {
+  color: #000;
+  font-family: Oswald;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+  text-transform: uppercase;
+}
+.hero-button {
+  margin-top: 52px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  width: 244px;
+  height: 54px;
+  background: #68b738;
+
+  border: none;
+  cursor: pointer;
+}
+
+.hero-button-text {
+  color: #fff;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.background-cover {
+  background: url(./greenBackground.png) no-repeat top center;
+  background-size: cover;
+  width: 960px;
+  height: 696px;
+
+  margin-top: -115px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; /* нужно, чтобы абсолютная банка была внутри */
+}
+
+.can-image {
+  position: absolute;
+  width: 552px;
+  height: 499px;
+  flex-shrink: 0;
+  transform: translate(-30%, 50%);
+  top: -16%;
+  z-index: 1;
+}
+
+/* Info Boxes */
+
+.info-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 82px;
+}
+
+.info-box {
+  width: 570px;
+  height: 374px;
+  flex-shrink: 0;
+
+  background: var(--basic_grey, #f2f2f2);
+}
+
+.animal {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  padding-top: 24px;
+  height: 56px;
+  flex-shrink: 0;
+}
+
+.info-box-title {
+  display: flex;
+  gap: 62px;
+  padding-left: 52px;
+  padding-top: 67px;
+}
+
+.info-box-title-text {
+  color: #000;
+  font-family: Oswald;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 100% */
+  text-transform: uppercase;
+}
+
+.info-box-text {
+  padding-left: 52px;
+  color: #000;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+
+  width: 467px;
+}
+
+.info-box-catalog {
+  padding-left: 52px;
+
+  color: #000;
+
+  font-family: Oswald;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.info-box-catalog-link {
+  color: #fff;
+  text-decoration: none;
+
+  color: #000;
+  text-align: center;
+  font-family: Oswald;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.info-box-catalog-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/* Footer */
+
+/* .footer {
+  width: 1440px;
+  height: 149px;
+  flex-shrink: 0;
+
+  background: #f2f2f2;
+} */
